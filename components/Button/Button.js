@@ -1,12 +1,20 @@
 import React from "react";
 import { StyleSheet, Text, Image, TouchableOpacity } from "react-native";
+import style from "./style";
 
 const Button = props => {
-  const { text, icon, disable } = props;
+  const { text, icon, disabled, onPress, btnStyle, btnTextStyle } = props;
   return (
-    <TouchableOpacity activeOpacity={0.5}>
-      {text && <Text>{text}</Text>}
-      {icon && <Image source={{ uri: icon }} resizeMode="contain" />}
+    <TouchableOpacity
+      style={[style.btnContainer, btnStyle]}
+      activeOpacity={0.5}
+      disabled={disabled}
+      onPress={onPress}
+    >
+      {text && (
+        <Text style={[style.btnText, btnTextStyle, { marginRight: icon ? 10 : 0 }]}>{text}</Text>
+      )}
+      {icon && <Image style={style.iconStyle} source={{ uri: icon }} resizeMode="contain" />}
     </TouchableOpacity>
   );
 };

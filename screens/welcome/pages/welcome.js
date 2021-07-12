@@ -20,9 +20,19 @@ const Welcome = props => {
         <Text style={style.textStyle}>Coinbase</Text>
         <Text style={style.textStyle}>Clone</Text>
         {visible && (
-          <View>
-            <Button text="Get Started" disabled={false} />
-            <Button text="Sign in" disabled={false} />
+          <View style={style.bottomView}>
+            <Button
+              text="Get Started"
+              disabled={false}
+              btnStyle={style.btnStyle}
+              btnTextStyle={style.btnTextStyle}
+            />
+            <Button
+              text="Sign in"
+              disabled={false}
+              onPress={() => navigation.navigate("Login")}
+              btnStyle={style.btnStyle2}
+            />
           </View>
         )}
       </View>
