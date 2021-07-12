@@ -17,6 +17,7 @@ const RootNavigation = () => {
       <Stack.Navigator screenOptions={screenOptions}>
         <Stack.Screen name="Splash" component={Welcome} />
         <Stack.Screen name="Login" component={Login} />
+        {/* <Stack.Screen name="Home" component={Home} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
