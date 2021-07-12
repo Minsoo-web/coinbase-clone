@@ -24,6 +24,7 @@ const Welcome = props => {
             <Button
               text="Get Started"
               disabled={false}
+              onPress={() => navigation.navigate("CreateAccount")}
               btnStyle={style.btnStyle}
               btnTextStyle={style.btnTextStyle}
             />

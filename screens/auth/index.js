@@ -1,2 +1,3 @@
 import Login from "./pages/Login";
-export { Login };
+import CreateAccount from "./pages/CreateAccount";
+export { Login, CreateAccount };

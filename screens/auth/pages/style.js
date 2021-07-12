@@ -47,5 +47,18 @@ export default StyleSheet.create({
   linkStyle: {
     fontSize: RFValue(14),
     color: colors.primaryBlue
+  },
+  section: {
+    marginTop: 20,
+    flexDirection: "row"
+  },
+  linkStyle2: {
+    fontSize: RFValue(15),
+    color: colors.primaryBlue
+  },
+  textStyle2: {
+    flex: 1,
+    fontSize: RFValue(15),
+    color: colors.mediumGrey
   }
 });
